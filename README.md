@@ -2,7 +2,7 @@
 
 [PixinForge](https://github.com/AnotherPillow/PixinForge) + Modern = PixinForgeModern
 
-This is a (1.20.1) forge port of [PixinForge](https://github.com/AnotherPillow/PixinForge). 
+This is a 1.20.1 port of [PixinForge](https://github.com/AnotherPillow/PixinForge). 
 
 ## Usage
 
