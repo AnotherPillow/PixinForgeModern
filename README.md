@@ -6,7 +6,7 @@ This is a 1.20.1 port of [PixinForge](https://github.com/AnotherPillow/PixinForg
 
 ## Usage
 
-1. Install Essential & [PixinForge](https://github.com/AnotherPillow/PixinForge)
+1. Install Essential & [PixinForgeModern](https://github.com/AnotherPillow/PixinForgeModern)
 2. Run the game
 
 ## Clarifications of Licenses
