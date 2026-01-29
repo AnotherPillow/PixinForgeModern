@@ -9,6 +9,15 @@ This is a 1.20.1 port of [PixinForge](https://github.com/AnotherPillow/PixinForg
 1. Install Essential & [PixinForgeModern](https://github.com/AnotherPillow/PixinForgeModern)
 2. Run the game
 
+## Config
+
+The config can be modified in <minecraft dir>/config/pixinforgemodern.json.
+
+### Fields
+
+- `url`: Modifies the connection URI. Default wss://connect.pixie.rip/v1 (which is currently non-functional).
+    
+
 ## Clarifications of Licenses
 
 - No, I'm not associated with Pixie or Essential.

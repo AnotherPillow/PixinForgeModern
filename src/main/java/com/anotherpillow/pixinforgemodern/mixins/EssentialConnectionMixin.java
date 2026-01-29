@@ -1,5 +1,6 @@
 package com.anotherpillow.pixinforgemodern.mixins;
 
+import com.anotherpillow.pixinforgemodern.PixinForgeModern;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;
@@ -16,7 +17,7 @@ public class EssentialConnectionMixin {
             at = @At(value = "INVOKE", target = "java/net/URI.create(Ljava/lang/String;)Ljava/net/URI;")
     )
     private static URI redirectUriCreate(String originalUri) {
-        String modifiedUri = originalUri.replace("essential.gg", "pixie.rip");
+        String modifiedUri = PixinForgeModern.config.getUrl();
         System.out.println("[Pixin] Original URI: " + originalUri + " , replacing with " + modifiedUri);
         System.out.println("[Pixin] Ignore the below warning from Essential. It may be ignored");
         return URI.create(modifiedUri);
@@ -29,7 +30,7 @@ public class EssentialConnectionMixin {
             at = @At(value = "INVOKE", target = "java/net/URI.create(Ljava/lang/String;)Ljava/net/URI;")
     )
     private static URI redirectUriCreateOld(String originalUri) {
-        String modifiedUri = originalUri.replace("essential.gg", "pixie.rip");
+        String modifiedUri = PixinForgeModern.config.getUrl();
         System.out.println("[Pixin] Original URI: " + originalUri + " , replacing with " + modifiedUri);
         System.out.println("[Pixin] Ignore the below warning from Essential. It may be ignored");
         return URI.create(modifiedUri);

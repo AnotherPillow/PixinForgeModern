@@ -33,6 +33,8 @@ import org.slf4j.Logger;
 @Mod(PixinForgeModern.MODID)
 public class PixinForgeModern {
 
+    public static Config config = new Config();
+
     public static final String MODID = "pixinforgemodern";
     private static final Logger LOGGER = LogUtils.getLogger();
 
